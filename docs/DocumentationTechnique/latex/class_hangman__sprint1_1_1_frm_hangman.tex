@@ -1,0 +1,303 @@
+\hypertarget{class_hangman__sprint1_1_1_frm_hangman}{}\doxysection{Hangman\+\_\+sprint1.\+Frm\+Hangman Class Reference}
+\label{class_hangman__sprint1_1_1_frm_hangman}\index{Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}}
+
+
+Classe \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman}{Frm\+Hangman}}, hérite de Form. Permet l\textquotesingle{}affichage de l\textquotesingle{}application  
+
+
+Inheritance diagram for Hangman\+\_\+sprint1.\+Frm\+Hangman\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hangman__sprint1_1_1_frm_hangman}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman_a6fe506879166358a31a5b60147348ce3}{Frm\+Hangman}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur de la Classe \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman}{Frm\+Hangman}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman_afb1747f300420ada978a4a6d550b0381}{Dispose}} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Nettoyage des ressources utilisées. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman_acb8784929f490f9d782482f4aefdfd41}{Crea\+Button}} ()
+\begin{DoxyCompactList}\small\item\em Methode de Creation des boutons de l\textquotesingle{}alphabet \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman_a4df27084674c968cb7f4870480e4769a}{Frm\+Hangman\+\_\+\+Load}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Methode lancée au chargement de la fenetre de l\textquotesingle{}application Création boutons et lettres Charge le jeu \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman_a6c3b36f80e6b3a51ffc8bbe9fd1c6d07}{btn\+Letter\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Evenement de la gestion de la lettre sur le clic \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman_a926fe81f03da29f1bef1262621d63537}{Ft\+\_\+\+Find\+Letter}} (char c)
+\begin{DoxyCompactList}\small\item\em Methode de traitement de la lettre \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman_a211f62461df47dc3ecc40a8e28b62a84}{btn\+Sub1\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Evenemement sur le clic du bouton btn\+Sub1 si le mot est correct, c\textquotesingle{}est au tour du joueur 2 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman_ab18eac57e430f69dff0aae47bfa59cf7}{btn\+Sub3\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Evenement sur le clic du bouton reset btn\+Sub3 Réactive les boutons Appelle la methode pour recharger le jeu \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman_a04f4ecb4b18d0fa3d138b95cfe34da5f}{txt\+Word1\+\_\+\+Key\+Press}} (object sender, Key\+Press\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Evenement sur la pression du bouton Entrée Renvoi vers l\textquotesingle{}evenement btn\+Sub1\+\_\+\+Click \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman_af9c1c8526d44548c370dbba2eeec39e1}{Initialize\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Méthode requise pour la prise en charge du concepteur -\/ ne modifiez pas le contenu de cette méthode avec l\textquotesingle{}éditeur de code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman_a37168e4686e93a7173aa9d5fc2ab08b8}{word}}
+\item 
+string \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman_aa3eefaf5ec240559c093cf675659b9f3}{name\+Pic}} = \char`\"{}\char`\"{}
+\item 
+int \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman_ad133d0f0cea9b02f85e3f4d4b0a1b936}{nb\+Tentative}} = 0
+\item 
+System.\+Component\+Model.\+IContainer \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman_a3c433084b616e628b66dd7e57c7e4103}{components}} = null
+\begin{DoxyCompactList}\small\item\em Variable nécessaire au concepteur. \end{DoxyCompactList}\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman_abf49b13b48ff751f770e72da6c7ebb11}{btn\+Sub1}}
+\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman_aa86d197d104c5149b5c3538e5fc0f088}{btn\+Reset}}
+\item 
+System.\+Windows.\+Forms.\+Picture\+Box \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman_a0ee86ad6c20bb911306205100a84fda7}{pib\+Pendu}}
+\item 
+System.\+Windows.\+Forms.\+Text\+Box \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman_a2006eaf3ef0755994b6dce4769513a9e}{txt\+Word1}}
+\item 
+System.\+Windows.\+Forms.\+Group\+Box \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman_a5fdf186544870a759a2bc2e2895a1479}{grb1}}
+\item 
+System.\+Windows.\+Forms.\+Group\+Box \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman_a86dd6d40a678cafb8f35df4d8ec03e5b}{grb2}}
+\item 
+System.\+Windows.\+Forms.\+Label \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman_a6a1831380a0c96b7c94ddcf2cb94d2f0}{lbl\+Lettres\+Restants}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman}{Frm\+Hangman}}, hérite de Form. Permet l\textquotesingle{}affichage de l\textquotesingle{}application 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hangman__sprint1_1_1_frm_hangman_a6fe506879166358a31a5b60147348ce3}\label{class_hangman__sprint1_1_1_frm_hangman_a6fe506879166358a31a5b60147348ce3}} 
+\index{Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}!FrmHangman@{FrmHangman}}
+\index{FrmHangman@{FrmHangman}!Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}}
+\doxysubsubsection{\texorpdfstring{FrmHangman()}{FrmHangman()}}
+{\footnotesize\ttfamily Hangman\+\_\+sprint1.\+Frm\+Hangman.\+Frm\+Hangman (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la Classe \mbox{\hyperlink{class_hangman__sprint1_1_1_frm_hangman}{Frm\+Hangman}} 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hangman__sprint1_1_1_frm_hangman_a6c3b36f80e6b3a51ffc8bbe9fd1c6d07}\label{class_hangman__sprint1_1_1_frm_hangman_a6c3b36f80e6b3a51ffc8bbe9fd1c6d07}} 
+\index{Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}!btnLetter\_Click@{btnLetter\_Click}}
+\index{btnLetter\_Click@{btnLetter\_Click}!Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}}
+\doxysubsubsection{\texorpdfstring{btnLetter\_Click()}{btnLetter\_Click()}}
+{\footnotesize\ttfamily void Hangman\+\_\+sprint1.\+Frm\+Hangman.\+btn\+Letter\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Evenement de la gestion de la lettre sur le clic 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hangman__sprint1_1_1_frm_hangman_a211f62461df47dc3ecc40a8e28b62a84}\label{class_hangman__sprint1_1_1_frm_hangman_a211f62461df47dc3ecc40a8e28b62a84}} 
+\index{Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}!btnSub1\_Click@{btnSub1\_Click}}
+\index{btnSub1\_Click@{btnSub1\_Click}!Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}}
+\doxysubsubsection{\texorpdfstring{btnSub1\_Click()}{btnSub1\_Click()}}
+{\footnotesize\ttfamily void Hangman\+\_\+sprint1.\+Frm\+Hangman.\+btn\+Sub1\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Evenemement sur le clic du bouton btn\+Sub1 si le mot est correct, c\textquotesingle{}est au tour du joueur 2 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hangman__sprint1_1_1_frm_hangman_ab18eac57e430f69dff0aae47bfa59cf7}\label{class_hangman__sprint1_1_1_frm_hangman_ab18eac57e430f69dff0aae47bfa59cf7}} 
+\index{Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}!btnSub3\_Click@{btnSub3\_Click}}
+\index{btnSub3\_Click@{btnSub3\_Click}!Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}}
+\doxysubsubsection{\texorpdfstring{btnSub3\_Click()}{btnSub3\_Click()}}
+{\footnotesize\ttfamily void Hangman\+\_\+sprint1.\+Frm\+Hangman.\+btn\+Sub3\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Evenement sur le clic du bouton reset btn\+Sub3 Réactive les boutons Appelle la methode pour recharger le jeu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hangman__sprint1_1_1_frm_hangman_acb8784929f490f9d782482f4aefdfd41}\label{class_hangman__sprint1_1_1_frm_hangman_acb8784929f490f9d782482f4aefdfd41}} 
+\index{Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}!CreaButton@{CreaButton}}
+\index{CreaButton@{CreaButton}!Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}}
+\doxysubsubsection{\texorpdfstring{CreaButton()}{CreaButton()}}
+{\footnotesize\ttfamily void Hangman\+\_\+sprint1.\+Frm\+Hangman.\+Crea\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Methode de Creation des boutons de l\textquotesingle{}alphabet 
+
+\mbox{\Hypertarget{class_hangman__sprint1_1_1_frm_hangman_afb1747f300420ada978a4a6d550b0381}\label{class_hangman__sprint1_1_1_frm_hangman_afb1747f300420ada978a4a6d550b0381}} 
+\index{Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Hangman\+\_\+sprint1.\+Frm\+Hangman.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Nettoyage des ressources utilisées. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & true si les ressources managées doivent être supprimées ; sinon, false.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hangman__sprint1_1_1_frm_hangman_a4df27084674c968cb7f4870480e4769a}\label{class_hangman__sprint1_1_1_frm_hangman_a4df27084674c968cb7f4870480e4769a}} 
+\index{Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}!FrmHangman\_Load@{FrmHangman\_Load}}
+\index{FrmHangman\_Load@{FrmHangman\_Load}!Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}}
+\doxysubsubsection{\texorpdfstring{FrmHangman\_Load()}{FrmHangman\_Load()}}
+{\footnotesize\ttfamily void Hangman\+\_\+sprint1.\+Frm\+Hangman.\+Frm\+Hangman\+\_\+\+Load (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Methode lancée au chargement de la fenetre de l\textquotesingle{}application Création boutons et lettres Charge le jeu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hangman__sprint1_1_1_frm_hangman_a926fe81f03da29f1bef1262621d63537}\label{class_hangman__sprint1_1_1_frm_hangman_a926fe81f03da29f1bef1262621d63537}} 
+\index{Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}!Ft\_FindLetter@{Ft\_FindLetter}}
+\index{Ft\_FindLetter@{Ft\_FindLetter}!Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}}
+\doxysubsubsection{\texorpdfstring{Ft\_FindLetter()}{Ft\_FindLetter()}}
+{\footnotesize\ttfamily bool Hangman\+\_\+sprint1.\+Frm\+Hangman.\+Ft\+\_\+\+Find\+Letter (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Methode de traitement de la lettre 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & une lettre\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vrai si la lettre c est trouvée
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hangman__sprint1_1_1_frm_hangman_af9c1c8526d44548c370dbba2eeec39e1}\label{class_hangman__sprint1_1_1_frm_hangman_af9c1c8526d44548c370dbba2eeec39e1}} 
+\index{Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}!InitializeComponent@{InitializeComponent}}
+\index{InitializeComponent@{InitializeComponent}!Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}}
+\doxysubsubsection{\texorpdfstring{InitializeComponent()}{InitializeComponent()}}
+{\footnotesize\ttfamily void Hangman\+\_\+sprint1.\+Frm\+Hangman.\+Initialize\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Méthode requise pour la prise en charge du concepteur -\/ ne modifiez pas le contenu de cette méthode avec l\textquotesingle{}éditeur de code. 
+
+\mbox{\Hypertarget{class_hangman__sprint1_1_1_frm_hangman_a04f4ecb4b18d0fa3d138b95cfe34da5f}\label{class_hangman__sprint1_1_1_frm_hangman_a04f4ecb4b18d0fa3d138b95cfe34da5f}} 
+\index{Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}!txtWord1\_KeyPress@{txtWord1\_KeyPress}}
+\index{txtWord1\_KeyPress@{txtWord1\_KeyPress}!Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}}
+\doxysubsubsection{\texorpdfstring{txtWord1\_KeyPress()}{txtWord1\_KeyPress()}}
+{\footnotesize\ttfamily void Hangman\+\_\+sprint1.\+Frm\+Hangman.\+txt\+Word1\+\_\+\+Key\+Press (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Key\+Press\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Evenement sur la pression du bouton Entrée Renvoi vers l\textquotesingle{}evenement btn\+Sub1\+\_\+\+Click 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_hangman__sprint1_1_1_frm_hangman_aa86d197d104c5149b5c3538e5fc0f088}\label{class_hangman__sprint1_1_1_frm_hangman_aa86d197d104c5149b5c3538e5fc0f088}} 
+\index{Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}!btnReset@{btnReset}}
+\index{btnReset@{btnReset}!Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}}
+\doxysubsubsection{\texorpdfstring{btnReset}{btnReset}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Hangman\+\_\+sprint1.\+Frm\+Hangman.\+btn\+Reset\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_hangman__sprint1_1_1_frm_hangman_abf49b13b48ff751f770e72da6c7ebb11}\label{class_hangman__sprint1_1_1_frm_hangman_abf49b13b48ff751f770e72da6c7ebb11}} 
+\index{Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}!btnSub1@{btnSub1}}
+\index{btnSub1@{btnSub1}!Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}}
+\doxysubsubsection{\texorpdfstring{btnSub1}{btnSub1}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Hangman\+\_\+sprint1.\+Frm\+Hangman.\+btn\+Sub1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_hangman__sprint1_1_1_frm_hangman_a3c433084b616e628b66dd7e57c7e4103}\label{class_hangman__sprint1_1_1_frm_hangman_a3c433084b616e628b66dd7e57c7e4103}} 
+\index{Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}!components@{components}}
+\index{components@{components}!Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}}
+\doxysubsubsection{\texorpdfstring{components}{components}}
+{\footnotesize\ttfamily System.\+Component\+Model.\+IContainer Hangman\+\_\+sprint1.\+Frm\+Hangman.\+components = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable nécessaire au concepteur. 
+
+\mbox{\Hypertarget{class_hangman__sprint1_1_1_frm_hangman_a5fdf186544870a759a2bc2e2895a1479}\label{class_hangman__sprint1_1_1_frm_hangman_a5fdf186544870a759a2bc2e2895a1479}} 
+\index{Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}!grb1@{grb1}}
+\index{grb1@{grb1}!Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}}
+\doxysubsubsection{\texorpdfstring{grb1}{grb1}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Group\+Box Hangman\+\_\+sprint1.\+Frm\+Hangman.\+grb1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_hangman__sprint1_1_1_frm_hangman_a86dd6d40a678cafb8f35df4d8ec03e5b}\label{class_hangman__sprint1_1_1_frm_hangman_a86dd6d40a678cafb8f35df4d8ec03e5b}} 
+\index{Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}!grb2@{grb2}}
+\index{grb2@{grb2}!Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}}
+\doxysubsubsection{\texorpdfstring{grb2}{grb2}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Group\+Box Hangman\+\_\+sprint1.\+Frm\+Hangman.\+grb2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_hangman__sprint1_1_1_frm_hangman_a6a1831380a0c96b7c94ddcf2cb94d2f0}\label{class_hangman__sprint1_1_1_frm_hangman_a6a1831380a0c96b7c94ddcf2cb94d2f0}} 
+\index{Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}!lblLettresRestants@{lblLettresRestants}}
+\index{lblLettresRestants@{lblLettresRestants}!Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}}
+\doxysubsubsection{\texorpdfstring{lblLettresRestants}{lblLettresRestants}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Hangman\+\_\+sprint1.\+Frm\+Hangman.\+lbl\+Lettres\+Restants\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_hangman__sprint1_1_1_frm_hangman_aa3eefaf5ec240559c093cf675659b9f3}\label{class_hangman__sprint1_1_1_frm_hangman_aa3eefaf5ec240559c093cf675659b9f3}} 
+\index{Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}!namePic@{namePic}}
+\index{namePic@{namePic}!Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}}
+\doxysubsubsection{\texorpdfstring{namePic}{namePic}}
+{\footnotesize\ttfamily string Hangman\+\_\+sprint1.\+Frm\+Hangman.\+name\+Pic = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_hangman__sprint1_1_1_frm_hangman_ad133d0f0cea9b02f85e3f4d4b0a1b936}\label{class_hangman__sprint1_1_1_frm_hangman_ad133d0f0cea9b02f85e3f4d4b0a1b936}} 
+\index{Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}!nbTentative@{nbTentative}}
+\index{nbTentative@{nbTentative}!Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}}
+\doxysubsubsection{\texorpdfstring{nbTentative}{nbTentative}}
+{\footnotesize\ttfamily int Hangman\+\_\+sprint1.\+Frm\+Hangman.\+nb\+Tentative = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_hangman__sprint1_1_1_frm_hangman_a0ee86ad6c20bb911306205100a84fda7}\label{class_hangman__sprint1_1_1_frm_hangman_a0ee86ad6c20bb911306205100a84fda7}} 
+\index{Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}!pibPendu@{pibPendu}}
+\index{pibPendu@{pibPendu}!Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}}
+\doxysubsubsection{\texorpdfstring{pibPendu}{pibPendu}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Picture\+Box Hangman\+\_\+sprint1.\+Frm\+Hangman.\+pib\+Pendu\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_hangman__sprint1_1_1_frm_hangman_a2006eaf3ef0755994b6dce4769513a9e}\label{class_hangman__sprint1_1_1_frm_hangman_a2006eaf3ef0755994b6dce4769513a9e}} 
+\index{Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}!txtWord1@{txtWord1}}
+\index{txtWord1@{txtWord1}!Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}}
+\doxysubsubsection{\texorpdfstring{txtWord1}{txtWord1}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Text\+Box Hangman\+\_\+sprint1.\+Frm\+Hangman.\+txt\+Word1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_hangman__sprint1_1_1_frm_hangman_a37168e4686e93a7173aa9d5fc2ab08b8}\label{class_hangman__sprint1_1_1_frm_hangman_a37168e4686e93a7173aa9d5fc2ab08b8}} 
+\index{Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}!word@{word}}
+\index{word@{word}!Hangman\_sprint1.FrmHangman@{Hangman\_sprint1.FrmHangman}}
+\doxysubsubsection{\texorpdfstring{word}{word}}
+{\footnotesize\ttfamily string Hangman\+\_\+sprint1.\+Frm\+Hangman.\+word\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Ydrani/\+Programmation/\+Git/\+Cshp\+\_\+\+Exercices/\+App\+Bureau/\+Hangman/\+Hangman-\/sprint4/\mbox{\hyperlink{_form1_8cs}{Form1.\+cs}}\item 
+C\+:/\+Users/\+Ydrani/\+Programmation/\+Git/\+Cshp\+\_\+\+Exercices/\+App\+Bureau/\+Hangman/\+Hangman-\/sprint4/\mbox{\hyperlink{_form1_8_designer_8cs}{Form1.\+Designer.\+cs}}\end{DoxyCompactItemize}
